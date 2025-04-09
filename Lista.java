@@ -65,6 +65,7 @@ public int cercaMassimo(){
          }
          p=p.getLink();
         }
+        return max;
 }
 
 }

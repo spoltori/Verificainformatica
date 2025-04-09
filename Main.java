@@ -15,8 +15,8 @@ public class Main {
         
         System.out.println("Lista originale:");
         l.printList();
-
-        
+//siccome il massimo deve essere essere in testa allora il nodo che sto creando deve puntare alla testa con il setLink;
+        nuovo.set=testa;
 
 
         System.out.println("Numero di nodi nella lista: " + l.size);
