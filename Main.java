@@ -8,18 +8,21 @@ public class Main {
         Scanner scanner=new Scanner;
         int max=0;
         Lista l = new Lista();
-        l.add(4);
+        l.add(1);
         l.add(3);
         l.add(9);
         l.add(5);
         
         System.out.println("Lista originale:");
         l.printList();
+        
 //siccome il massimo deve essere essere in testa allora il nodo che sto creando deve puntare alla testa con il setLink;
-        nuovo.set=testa;
 
-
-        System.out.println("Numero di nodi nella lista: " + l.size);
+        l.add(lista.cercaMassimo());
+        nuovo.setLink=testa.getLink();
+        
+        System.out.println("Lista aggiornata");
+        l.printList();
 	}
 
 }
