@@ -59,11 +59,11 @@ public void printList() {
 public int cercaMassimo(){
     int max=testa.getNum();
     Nodo p=testa;
-    while(p.getLink!=null){
+    while(p.getLink()!=null){
         if(max<p.getNum()){
-            max=p.getNum;
+            max=p.getNum();
          }
-         p=p.getLink();
+         p= p.getLink();
         }
         return max;
 }

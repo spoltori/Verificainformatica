@@ -1,11 +1,11 @@
 //Es1. Trovare il numero massimo in una lista di 10 numeri interi. 
 // Creare un nuovo nodo in testa alla lista contenete il valore massimo trovato.
 //  Stampare la lista prima e dopo l'inserimento del massimo.
-import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner=new Scanner;
+
         int max=0;
         Lista l = new Lista();
         l.add(1);
@@ -18,8 +18,11 @@ public class Main {
         
 //siccome il massimo deve essere essere in testa allora il nodo che sto creando deve puntare alla testa con il setLink;
 
-        l.add(lista.cercaMassimo());
-        nuovo.setLink=testa.getLink();
+        l.add(l.cercaMassimo());
+        Nodo nuovo = new Nodo(l.cercaMassimo());
+nuovo.setLink(l.getTesta());
+l.setTesta(nuovo);
+
         
         System.out.println("Lista aggiornata");
         l.printList();
