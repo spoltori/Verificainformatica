@@ -9,6 +9,7 @@ for(int i=0;i<3;i++){
     coda.enqueue(n1);
 }
 System.out.println("i 3 elementi sono stati inseriti");
-
-
+coda.dequeue();
+coda.dequeue();
+coda.toString();
 }
